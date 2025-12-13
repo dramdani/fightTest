@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>SmallFighter</title>
+    <title>Duel Fighter</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,14 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">SmallFighter</div>
-      </div>
-    </div>
-    <div id="rotation-overlay">
-      <div class="message">
-          <h1>Please Rotate Your Device</h1>
-          <p>This experience is optimized for landscape mode.</p>
-          
+        <div id="unity-build-title">FSM_Test</div>
       </div>
     </div>
     <script>
@@ -59,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/smallfighter.loader.js";
+      var loaderUrl = buildUrl + "/battleSystem.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/smallfighter.data.unityweb",
-        frameworkUrl: buildUrl + "/smallfighter.framework.js.unityweb",
-        codeUrl: buildUrl + "/smallfighter.wasm.unityweb",
+        dataUrl: buildUrl + "/battleSystem.data.br",
+        frameworkUrl: buildUrl + "/battleSystem.framework.js.br",
+        codeUrl: buildUrl + "/battleSystem.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "wolfpuplabs",
-        productName: "SmallFighter",
-        productVersion: "1.0",
+        companyName: "DefaultCompany",
+        productName: "FSM_Test",
+        productVersion: "0.1.0",
         showBanner: unityShowBanner,
         // errorHandler: function(err, url, line) {
         //    alert("error " + err + " occurred at line " + line);
@@ -134,18 +127,6 @@
             };
 
       document.body.appendChild(script);
-
-      function requestFullscreen(element) {
-        if (element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if (element.mozRequestFullScreen) { /* Firefox */
-            element.mozRequestFullScreen();
-        } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-            element.webkitRequestFullscreen();
-        } else if (element.msRequestFullscreen) { /* IE/Edge */
-            element.msRequestFullscreen();
-        }
-    }
 
     </script>
   </body>
